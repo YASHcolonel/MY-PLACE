@@ -5,4 +5,4 @@ Author-Yash Aditya.
 
 
 
-<a heref="https://incomparable-madeleine-a7f33c.netlify.app/"> Panda Card </a>
+<a href="https://incomparable-madeleine-a7f33c.netlify.app/"> Panda Card </a>
