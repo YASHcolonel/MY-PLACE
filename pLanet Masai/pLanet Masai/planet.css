@@ -1,0 +1,141 @@
+body{
+    height:100vh;
+    width:100%;
+    position: absolute;
+    background-image: url('https://images.unsplash.com/photo-1528819027803-5473f2bf7633?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8OXx8fGVufDB8fHx8fA%3D%3D'); /* Replace 'galaxy.jpg' with your image file */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+
+}
+/* (viewport height.(vh)
+ 100vh means 100% of the viewport height.*/
+.sun{
+    width:100px;
+    height:100px;
+    background: radial-gradient(circle at 100%,rgb(226, 204, 7), rgb(255, 200, 98) 50%,rgb(239, 255, 14) 75%);
+    border-radius: 50%;
+    position: absolute;
+    top:calc(50% - 100px / 2);
+    left:calc(50% - 100px / 2);
+}
+.mer{
+    --moveX:90px;
+    height:20px;
+    width:20px;
+    height:20px;
+    background: radial-gradient(circle at 100%,rgb(158, 88, 30), rgb(128, 91, 24) 50%,rgb(48, 39, 27) 75%);
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 20px / 2);
+    left: calc(50% - 20px / 2);
+    /* transform: translate(120px); */
+    animation:5s linear 1s infinite solarsystem;
+}
+ .ven{
+    --moveX:120px;
+        height:28px;
+        width:28px;
+        background: radial-gradient(circle at 100%,rgb(53, 30, 12), rgb(119, 43, 43) 50%,rgb(104, 69, 64) 75%);
+        border-radius: 50%;
+        position: absolute;
+        top: calc(50% - 28px / 2);
+        left: calc(50% - 28px / 2);
+        /* transform: translate(160px);   */
+        animation:20s linear 1s infinite solarsystem;
+    }
+ 
+    .earth{
+        --moveX:180px;
+        height:30px;
+        width:30px;
+        background: radial-gradient(circle at 100%,rgb(42, 212, 255), rgb(0, 95, 95) 50%,rgb(6, 62, 216) 75%);
+        border-radius: 50%;
+        position: absolute;
+        top: calc(50% - 30px / 2);
+        left: calc(50% - 30px / 2);
+        /* transform: translate(200px); */
+        animation:12s linear 1s infinite solarsystem;
+    }
+
+    .mars{
+        --moveX:200px;
+        height:25px;
+        width:25px;
+        background: radial-gradient(circle at 100%,rgb(92, 12, 12), rgb(133, 27, 0) 50%,rgb(61, 7, 7) 75%);
+        border-radius: 50%;
+        position: absolute;
+        top: calc(50% - 25px / 2);
+        left: calc(50% - 25px / 2);
+        /* for one direction movenment 
+        transform: translate(250px);*/
+        animation:15s linear 1s infinite solarsystem;
+    }
+    
+    .jup{
+        --moveX:220px;
+        height:55px;
+        width:55px;
+        background: radial-gradient(circle at 100%,rgb(15, 63, 19), rgb(61, 211, 15) 50%,rgb(67, 126, 81) 75%);
+        border-radius: 50%;
+        position: absolute;
+        top: calc(50% - 55px / 2);
+        left: calc(50% - 55px / 2);
+        /* for one direction movenment 
+        transform: translate(250px);*/
+        animation:10s linear 1s infinite solarsystem;
+    }
+    .sat{
+        --moveX:300px;
+        height:48px;
+        width:48px;
+        background: radial-gradient(circle at 100%,rgb(226, 204, 7), rgb(99, 69, 13) 50%,rgb(156, 117, 11) 75%);
+        border-radius: 50%;
+        border-radius: 50%;
+        position: absolute;
+        top: calc(50% - 48px / 2);
+        left: calc(50% - 48px / 2);
+        /* for one direction movenment 
+        transform: translate(250px);*/
+        animation:8s linear 1s infinite solarsystem;
+    }
+    .ura{
+        --moveX:350px;
+        height:41px;
+        width:41px;
+        background: radial-gradient(circle at 100%,rgb(126, 104, 146), rgb(93, 86, 119) 50%,rgb(97, 97, 96) 75%);
+        border-radius: 50%;
+        position: absolute;
+        top: calc(50% - 43px / 2);
+        left: calc(50% - 43px / 2);
+        /* for one direction movenment 
+        transform: translate(250px);*/
+        animation:12s linear 1s infinite solarsystem;
+    }
+    .nep{
+        --moveX:370px;
+        height: 34px;
+        width: 34px;
+        background: radial-gradient(circle at 100%,rgb(40, 68, 73), rgb(146, 175, 174) 50%,rgb(74, 77, 116) 75%);
+        border-radius: 50%;
+        position: absolute;
+        top: calc(50% - 34px / 2);
+        left: calc(50% - 34px / 2);
+        /* for one direction movenment 
+        transform: translate(250px);*/
+        animation:18s linear 1s infinite solarsystem;
+    }
+    
+    @keyframes solarsystem {
+        
+        from{
+            transform: rotate(0deg) translate(var(--moveX));
+        }
+        to{
+            transform: rotate(360deg) translate(var(--moveX));
+        }
+    }
+  /* Variable in Css */
+
