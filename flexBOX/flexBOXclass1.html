@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flexbox</title>
+    <style>
+      .box {
+        background-color: gold;
+        padding: 20px;
+        display: flex;
+      }
+      .box > div {
+        padding: 30px;
+      }
+      .box > div:nth-child(1) {
+        background-color: aqua;
+      }
+      .box > div:nth-child(2) {
+        background-color: indigo;
+      }
+      .box > div:nth-child(3) {
+        background-color: orangered;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div>1</div>
+
+      <div>2</div>
+      <div>3</div>
+    </div>
+  </body>
+</html>
