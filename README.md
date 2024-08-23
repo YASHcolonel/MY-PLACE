@@ -13,3 +13,7 @@ Author-Yash Aditya.
 <h4>CALCULATOR(using Grid)</h4>
 
 <a href="https://precious-macaron-3905e6.netlify.app/">Calculator -- </a>
+</br> </br>
+<h4>NAV BAR (using flex)</h4>
+
+<a href="https://effervescent-gingersnap-47b3e1.netlify.app/">using Flex and its Properties-- </a>
